@@ -22,17 +22,11 @@ Berdasarkan Pie Chart, 92% tidak memiliki masalah dalam melunasi pinjaman pada w
 Data Home Credit awalnya memiliki 307511 rows x 122 columns.
 
 Penanganan Missing Values :
-<p align="justify">
 1. Missing values > 40%, dilakukan penghapusan kolom.
-<p align="justify">
 2. Missing values yang tersisa diisi dengan median untuk data numerik dan modus untuk data kategorikal.
-<p align="justify">
 3. Terdapat data yang memiliki nilai XNA, maka dilakukan handling dengan mengganti data dengan nilai modus.
-<p align="justify">
 4. Menghapus kolom FLAG_DOCUMENT karena tidak relevan.
-<p align="justify">
 5. Outlier Handling dilakukan menggunakan z-score, data CNT_CHILDREN akan dihapus jika nilai z-score dibawah 3.
-<p align="justify">
 6. Terdapat nilai anomali, contohnya terdapat data yang bernilai minus dalam beberapa kolom. Hal ini diperbaiki dengan mengalikan data yang bernilai minus dengan -1.
 <p align="justify">
 Variabel kategori seringkali tidak dapat diolah secara langsung oleh model atau algoritma machine learning, sehingga dilakukan 2 metode encoding yaitu, One Hot Encoding dilakukan untuk data dengan value unique lebih dari 2 sedangkan sisanya dilakukan label encoder.
@@ -76,5 +70,5 @@ Model klasifikasi terbaik yang didapatkan untuk memprediksi nasabah yang gagal m
 
 
 
-- Collaboration Project (5 Person) -
+- Collaboration Project (5 Person)
 
